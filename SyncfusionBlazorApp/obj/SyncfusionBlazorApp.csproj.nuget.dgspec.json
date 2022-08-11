@@ -1,0 +1,239 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\SyncfusionBlazorApp\\SyncfusionBlazorApp\\SyncfusionBlazorApp.csproj": {}
+  },
+  "projects": {
+    "E:\\SyncfusionBlazorApp\\SyncfusionBlazorApp\\SyncfusionBlazorApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\SyncfusionBlazorApp\\SyncfusionBlazorApp\\SyncfusionBlazorApp.csproj",
+        "projectName": "SyncfusionBlazorApp",
+        "projectPath": "E:\\SyncfusionBlazorApp\\SyncfusionBlazorApp\\SyncfusionBlazorApp.csproj",
+        "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
+        "outputPath": "E:\\SyncfusionBlazorApp\\SyncfusionBlazorApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Syncfusion.Blazor.BarcodeGenerator": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.BulletChart": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.Buttons": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.Calendars": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.Cards": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.Charts": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.CircularGauge": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.DropDowns": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.FileManager": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.Gantt": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.Grid": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.HeatMap": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.InPlaceEditor": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.Inputs": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.Kanban": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.Layouts": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.LinearGauge": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.Lists": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.Maps": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.Navigations": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.Notifications": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.PdfViewer": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.PivotTable": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.Popups": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.ProgressBar": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.QueryBuilder": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.RangeNavigator": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.RichTextEditor": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.Schedule": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.Sparkline": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.Spinner": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.SplitButtons": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.StockChart": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.Themes": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.TreeGrid": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Blazor.TreeMap": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.Pdf.Net.Core": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            },
+            "Syncfusion.XlsIO.Net.Core": {
+              "target": "Package",
+              "version": "[20.2.0.43, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[6.0.8, 6.0.8]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

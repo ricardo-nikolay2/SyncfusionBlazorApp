@@ -1,0 +1,214 @@
+﻿
+<h3>Daftar Telepon</h3>
+
+
+<SfTab Width="400">
+
+		<TabAnimationSettings>
+			<TabAnimationPrevious Effect="AnimationEffect.SlideBottomIn "></TabAnimationPrevious>
+			<TabAnimationNext Effect="AnimationEffect.SlideBottomIn"></TabAnimationNext>
+		</TabAnimationSettings>
+
+	
+	<TabItems>         
+		 
+		<TabItem>
+			<ChildContent>
+				<TabHeader Text="Create"></TabHeader>
+			</ChildContent>
+			<ContentTemplate>
+		
+					<table cellpadding="4">
+						<tr>
+							<td>Nama</td> <td>:</td> <td><SfTextBox @bind-Value="@nama"  /></td>
+
+						</tr>
+
+						<tr>
+							<td>Extension</td>
+							<td>:</td>
+							<td><SfTextBox @bind-Value="@extension" />
+							</td>
+
+						</tr>
+
+						<tr>
+							<td>Voip</td>
+							<td>:</td>
+							<td><SfTextBox @bind-Value="@voip" />
+							</td>
+
+						</tr>
+
+						<tr>
+							<td>
+								<SfButton IsPrimary="true" OnClick="SaveData" > SAVE </SfButton>
+							</td>
+		
+						</tr>
+	
+					</table>
+
+					<br />
+
+					
+
+						@* @foreach(var data in ListDaftarTelepon)
+							{
+	   
+									<tr>
+										<td>@data.Nama</td>
+										<td>@data.Extension</td>
+										<td>@data.Voip</td>
+
+									</tr>
+							}*@
+
+							
+							   <SfGrid @ref="GridSaveData"  TValue="@DaftarNomorTelepon" DataSource="@ListDaftarTelepon">
+								   <GridColumns>
+									   <GridColumn Field="Nama" HeaderText="Nama" ></GridColumn>
+										<GridColumn Field="Voip" HeaderText="VOIP" ></GridColumn>
+										<GridColumn Field="Extension" HeaderText="Extension" ></GridColumn>
+								   </GridColumns>
+										
+							   </SfGrid>
+
+
+					
+
+					<br/>
+
+			  </ContentTemplate>
+		</TabItem>		
+
+
+		 <TabItem>
+			<ChildContent>
+				<TabHeader Text="Read"></TabHeader>
+			</ChildContent>
+			<ContentTemplate>
+				<div>
+					
+					<table cellpadding=" 4">
+   
+						<tr>
+							<td>Cari Nama</td>
+							 <td>:</td>
+							<td><SfTextBox @bind-Value="@carinama"  /> </td>
+						</tr>
+
+
+					  @foreach(var carinamaList in ListDaftarTelepon)
+						{
+								<td>@carinamaList.Nama</td>
+								<td>@carinamaList.Extension</td>
+								<td>@carinamaList.Voip</td>
+
+						}
+
+					</table>
+				</div>
+			  </ContentTemplate>
+		</TabItem>		
+
+
+
+		 <TabItem>
+			<ChildContent>
+				<TabHeader Text="Update"></TabHeader>
+			</ChildContent>
+			<ContentTemplate>
+				<div>
+
+
+
+				</div>
+			  </ContentTemplate>
+		</TabItem>		
+
+
+
+		 <TabItem>
+			<ChildContent>
+				<TabHeader Text="Delete"></TabHeader>
+			</ChildContent>
+			<ContentTemplate>
+				<div>
+
+
+
+				</div>
+			  </ContentTemplate>
+		</TabItem>		
+		</TabItems>
+				
+
+
+</SfTab>
+
+
+	
+				
+
+
+
+
+
+
+
+
+
+
+@code {
+
+	string nama, extension, voip;
+	
+	string carinama { get; set; } =" ";
+	
+	List<DaftarNomorTelepon> ListDaftarTelepon = new List<DaftarNomorTelepon>();
+	SfGrid<DaftarNomorTelepon> GridSaveData;
+
+
+	public void SaveData()
+	{
+		ListDaftarTelepon.Add(new DaftarNomorTelepon
+				{
+					Nama = nama,
+					Extension = extension,
+					Voip = voip
+				});
+
+		GridSaveData.Refresh();
+		
+		nama = "";
+		extension = "";
+		voip = "";
+
+		
+	}
+
+
+	public void CariNamaTlp()
+			{
+	
+				ListDaftarTelepon.Add(new DaftarNomorTelepon
+					{
+						Nama = nama,
+						Extension = extension,
+						Voip = voip
+
+					 });
+			}
+
+
+
+	public class DaftarNomorTelepon
+	{
+		public string Nama { get; set; } ="";
+		public string Extension { get; set; } = "";
+		public string Voip { get; set; } = "";
+	}
+
+
+}
